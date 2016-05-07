@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ColegioModelStoreContainer" CdmEntityContainer="ColegioEntities">
+    <EntitySetMapping Name="Alumnoes">
+      <EntityTypeMapping TypeName="ColegioModel.Alumno">
+        <MappingFragment StoreEntitySet="Alumno">
+          <ScalarProperty Name="idAlumno" ColumnName="idAlumno" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="apellido" ColumnName="apellido" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AuxAlumnoGradoes">
+      <EntityTypeMapping TypeName="ColegioModel.AuxAlumnoGrado">
+        <MappingFragment StoreEntitySet="AuxAlumnoGrado">
+          <ScalarProperty Name="idAuxAlumnoGrado" ColumnName="idAuxAlumnoGrado" />
+          <ScalarProperty Name="idAlumno" ColumnName="idAlumno" />
+          <ScalarProperty Name="idGrado" ColumnName="idGrado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AuxMateriaGradoes">
+      <EntityTypeMapping TypeName="ColegioModel.AuxMateriaGrado">
+        <MappingFragment StoreEntitySet="AuxMateriaGrado">
+          <ScalarProperty Name="idAuxMateriaGrado" ColumnName="idAuxMateriaGrado" />
+          <ScalarProperty Name="idMateria" ColumnName="idMateria" />
+          <ScalarProperty Name="idGrado" ColumnName="idGrado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AuxMateriaProfesors">
+      <EntityTypeMapping TypeName="ColegioModel.AuxMateriaProfesor">
+        <MappingFragment StoreEntitySet="AuxMateriaProfesor">
+          <ScalarProperty Name="idAuxMateriaProfesor" ColumnName="idAuxMateriaProfesor" />
+          <ScalarProperty Name="idMateria" ColumnName="idMateria" />
+          <ScalarProperty Name="idProfesor" ColumnName="idProfesor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Departamentoes">
+      <EntityTypeMapping TypeName="ColegioModel.Departamento">
+        <MappingFragment StoreEntitySet="Departamento">
+          <ScalarProperty Name="idDepartamento" ColumnName="idDepartamento" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DetalleSalonMaterias">
+      <EntityTypeMapping TypeName="ColegioModel.DetalleSalonMateria">
+        <MappingFragment StoreEntitySet="DetalleSalonMateria">
+          <ScalarProperty Name="idDetalleSalonMateria" ColumnName="idDetalleSalonMateria" />
+          <ScalarProperty Name="idSalon" ColumnName="idSalon" />
+          <ScalarProperty Name="idMateria" ColumnName="idMateria" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DetalleSalonSeccions">
+      <EntityTypeMapping TypeName="ColegioModel.DetalleSalonSeccion">
+        <MappingFragment StoreEntitySet="DetalleSalonSeccion">
+          <ScalarProperty Name="idDetlleSalonSeccion" ColumnName="idDetlleSalonSeccion" />
+          <ScalarProperty Name="idSalon" ColumnName="idSalon" />
+          <ScalarProperty Name="idSeccion" ColumnName="idSeccion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Gradoes">
+      <EntityTypeMapping TypeName="ColegioModel.Grado">
+        <MappingFragment StoreEntitySet="Grado">
+          <ScalarProperty Name="idGrado" ColumnName="idGrado" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Materias">
+      <EntityTypeMapping TypeName="ColegioModel.Materia">
+        <MappingFragment StoreEntitySet="Materia">
+          <ScalarProperty Name="idMateria" ColumnName="idMateria" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Profesors">
+      <EntityTypeMapping TypeName="ColegioModel.Profesor">
+        <MappingFragment StoreEntitySet="Profesor">
+          <ScalarProperty Name="idProfesor" ColumnName="idProfesor" />
+          <ScalarProperty Name="idDepartamento" ColumnName="idDepartamento" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="apellido" ColumnName="apellido" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Rols">
+      <EntityTypeMapping TypeName="ColegioModel.Rol">
+        <MappingFragment StoreEntitySet="Rol">
+          <ScalarProperty Name="idRol" ColumnName="idRol" />
+          <ScalarProperty Name="rol1" ColumnName="rol" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Salons">
+      <EntityTypeMapping TypeName="ColegioModel.Salon">
+        <MappingFragment StoreEntitySet="Salon">
+          <ScalarProperty Name="idSalon" ColumnName="idSalon" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Seccions">
+      <EntityTypeMapping TypeName="ColegioModel.Seccion">
+        <MappingFragment StoreEntitySet="Seccion">
+          <ScalarProperty Name="idSeccion" ColumnName="idSeccion" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuarios">
+      <EntityTypeMapping TypeName="ColegioModel.Usuario">
+        <MappingFragment StoreEntitySet="Usuario">
+          <ScalarProperty Name="idUsuario" ColumnName="idUsuario" />
+          <ScalarProperty Name="idRol" ColumnName="idRol" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="contraseña" ColumnName="contraseña" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Notas">
+      <EntityTypeMapping TypeName="ColegioModel.Nota">
+        <MappingFragment StoreEntitySet="Nota">
+          <ScalarProperty Name="idNota" ColumnName="idNota" />
+          <ScalarProperty Name="idAlumno" ColumnName="idAlumno" />
+          <ScalarProperty Name="idMateria" ColumnName="idMateria" />
+          <ScalarProperty Name="bimestre" ColumnName="bimestre" />
+          <ScalarProperty Name="valor" ColumnName="valor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

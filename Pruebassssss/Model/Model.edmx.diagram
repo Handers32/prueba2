@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="42027cd6fb6041799dd98cfdff8edfe5" Name="Diagram1">
+        <EntityTypeShape EntityType="ColegioModel.Alumno" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ColegioModel.AuxAlumnoGrado" Width="1.5" PointX="6" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ColegioModel.AuxMateriaGrado" Width="1.5" PointX="3" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ColegioModel.AuxMateriaProfesor" Width="1.5" PointX="3" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ColegioModel.Departamento" Width="1.5" PointX="1.5" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="ColegioModel.DetalleSalonMateria" Width="1.5" PointX="3" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ColegioModel.DetalleSalonSeccion" Width="1.5" PointX="3" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ColegioModel.Grado" Width="1.5" PointX="0.75" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ColegioModel.Materia" Width="1.5" PointX="0.75" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ColegioModel.Profesor" Width="1.5" PointX="0.75" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ColegioModel.Rol" Width="1.5" PointX="8.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ColegioModel.Salon" Width="1.5" PointX="0.75" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ColegioModel.Seccion" Width="1.5" PointX="0.75" PointY="16" IsExpanded="true" />
+        <EntityTypeShape EntityType="ColegioModel.Usuario" Width="1.5" PointX="11" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="ColegioModel.Nota" Width="1.5" PointX="6" PointY="6.5" IsExpanded="true" />
+        <AssociationConnector Association="ColegioModel.FK__AuxAlumno__idAlu__32E0915F" ManuallyRouted="false" />
+        <AssociationConnector Association="ColegioModel.FK__Nota__idAlumno__35BCFE0A" ManuallyRouted="false" />
+        <AssociationConnector Association="ColegioModel.FK__AuxAlumno__idGra__33D4B598" ManuallyRouted="false" />
+        <AssociationConnector Association="ColegioModel.FK__AuxMateri__idGra__20C1E124" ManuallyRouted="false" />
+        <AssociationConnector Association="ColegioModel.FK__AuxMateri__idMat__1FCDBCEB" ManuallyRouted="false" />
+        <AssociationConnector Association="ColegioModel.FK__AuxMateri__idMat__239E4DCF" ManuallyRouted="false" />
+        <AssociationConnector Association="ColegioModel.FK__AuxMateri__idPro__24927208" ManuallyRouted="false" />
+        <AssociationConnector Association="ColegioModel.FK__Profesor__idDepa__173876EA" ManuallyRouted="false" />
+        <AssociationConnector Association="ColegioModel.FK__DetalleSa__idMat__2C3393D0" ManuallyRouted="false" />
+        <AssociationConnector Association="ColegioModel.FK__DetalleSa__idSal__2B3F6F97" ManuallyRouted="false" />
+        <AssociationConnector Association="ColegioModel.FK__DetalleSa__idSal__2F10007B" ManuallyRouted="false" />
+        <AssociationConnector Association="ColegioModel.FK__DetalleSa__idSec__300424B4" ManuallyRouted="false" />
+        <AssociationConnector Association="ColegioModel.FK__Nota__idMateria__36B12243" ManuallyRouted="false" />
+        <AssociationConnector Association="ColegioModel.FK__Usuario__idRol__1273C1CD" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
